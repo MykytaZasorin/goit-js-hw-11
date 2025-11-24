@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -20,7 +24,9 @@
         <button type="submit">Search</button>
       </form>
 
-      <div class="loader hidden js-loader"></div>
+      <div class="loader hidden js-loader">
+        <div class="ball-spin-fade-loader"></div>
+      </div>
 
       <ul class="gallery js-gallery"></ul>
     </main>

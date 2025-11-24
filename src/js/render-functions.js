@@ -28,10 +28,10 @@ export function newGallery(images) {
             <img src="${webformatURL}" alt="${tags}" />
           </a>
           <ul class="info">
-            <li><strong>Likes:</strong> ${likes}</li>
-            <li><strong>Views:</strong> ${views}</li>
-            <li><strong>Comments:</strong> ${comments}</li>
-            <li><strong>Downloads:</strong> ${downloads}</li>
+            <li><strong>Likes</strong> ${likes}</li>
+            <li><strong>Views</strong> ${views}</li>
+            <li><strong>Comments</strong> ${comments}</li>
+            <li><strong>Downloads</strong> ${downloads}</li>
           </ul>
         </li>`
     )
@@ -50,6 +50,6 @@ export function showLoader() {
   refs.loader.classList.remove('hidden');
 }
 
-export function clearGallery() {
+export function hideLoader() {
   refs.loader.classList.add('hidden');
 }
