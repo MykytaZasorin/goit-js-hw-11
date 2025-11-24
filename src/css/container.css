@@ -86,3 +86,31 @@
   font-size: 12px;
   line-height: 1.2;
 }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  left: 48%;
+  border: 10px solid;
+  border-color: rgba(255, 243, 16, 0.75) rgba(255, 243, 16, 0.75)
+    rgba(21, 0, 255, 0.75) rgba(21, 0, 255, 0.75);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
